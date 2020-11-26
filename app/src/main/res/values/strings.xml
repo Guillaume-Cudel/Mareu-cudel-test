@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ma réu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="action_location_sort">Filter meeting</string>
+</resources>

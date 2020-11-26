@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_list_color"
+        android:layout_width="@dimen/size_list_image_width"
+        android:layout_height="@dimen/size_list_image_width"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/item_list_informations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/item_list_color"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="chouette"
+        android:textSize="@dimen/size_text"/>
+
+
+
+    <TextView
+        android:id="@+id/item_list_participants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@+id/item_list_color"
+        app:layout_constraintTop_toBottomOf="@+id/item_list_informations"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:text="pas chouette"
+        android:textSize="@dimen/size_text"/>
+
+
+
+    <ImageButton
+        android:id="@+id/item_list_delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/item_list_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_list_informations"
+        app:srcCompat="@drawable/ic_delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
